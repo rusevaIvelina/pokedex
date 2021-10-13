@@ -31,7 +31,7 @@ let pokemonList = [
     }
 ];
 
-// A loop which iterates iver each item in pokemonList
+// A loop which iterates over each item in pokemonList
 
 for ( let i = 0; i < pokemonList.length; i++) {
   document.write('<p id="pokedex-style">' + pokemonList[i].name + (' \(height: ') + pokemonList[i].height + '\)' + '</p> <br>');
