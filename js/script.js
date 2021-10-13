@@ -32,8 +32,8 @@ let pokemonList = [
 ];
 
 for ( let i = 0; i < pokemonList.length; i++) {
-  document.write('<p id="pokedex-style">' + pokemonList[i].name + (' \(Height: ') + pokemonList[i].height + '\)' + '</p> <br>');
-  if (pokemonList[i].height > 2) {
+  document.write('<p id="pokedex-style">' + pokemonList[i].name + (' \(height: ') + pokemonList[i].height + '\)' + '</p> <br>');
+  if (pokemonList[i].height > 2) { 
     document.write('- Wow! That is big!');
   }
 }  
