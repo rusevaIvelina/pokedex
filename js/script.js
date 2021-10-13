@@ -1,4 +1,4 @@
-let pokemonlist = [
+let pokemonList = [
   {
    name:'Corsola',
    height: 0.6,
@@ -30,3 +30,14 @@ let pokemonlist = [
     type: ['fire']
     }
 ];
+
+for ( let i = 0; i < pokemonList.length; i++) {
+  document.write('<p id="pokedex-style">' + pokemonList[i].name + ('\(Height: ') + pokemonList[i].height + '\)' + '</p> <br>')
+  if (pokemonList[i].height > 3) {
+    document.write('- Wow! That is big!')
+  }
+
+
+}
+
+
