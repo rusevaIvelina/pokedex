@@ -1,3 +1,7 @@
+// For IIFE
+
+let pokemonRepository = (function() {
+
 let pokemonList = [
   {
    name:'Corsola',
@@ -30,11 +34,21 @@ let pokemonList = [
     type: ['fire']
     }
 ];
+ // Adds a new pokemon at the end of the pokemonList
+function add(pokemon) {
+  pokemonList.push(pokemon);
+}
 
-// Displays the aasigned properties to each pokemon
+function getAll() {
+  return pokemonList;
+}
 
-pokemonList.forEach(function(pokemon) {
-  console.log(pokemon.name + " " + pokemon.height + " " + pokemon.type);
-});
+return {
+  add:add,
+  getAll: getAll
+};
+})();
+
+console.log(pokemonRepository.getAll());
 
 
