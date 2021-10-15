@@ -36,7 +36,11 @@ let pokemonList = [
 ];
  // Adds a new pokemon at the end of the pokemonList
 function add(pokemon) {
+  if (typeof pokemon === 'object') {
   pokemonList.push(pokemon);
+  } else {
+    document.write('Not a pokemon')
+  };
 }
 
 function getAll() {
