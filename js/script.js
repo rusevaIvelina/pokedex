@@ -34,7 +34,7 @@ let pokemonList = [
     type: ['fire']
     }
 ];
- // Adds a new pokemon at the end of the pokemonList
+ // Adds a new pokemon at the end of the pokemonList with the correct type of data
 function add(pokemon) {
   if (typeof pokemon === 'object') {
   pokemonList.push(pokemon);
