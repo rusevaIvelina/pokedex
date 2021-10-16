@@ -17,7 +17,7 @@ function add(pokemon) {
   if (typeof pokemon === 'name, height, type') {
   pokemonList.push(pokemon);
   } else {
-    document.write('Not a pokemon')
+    document.write('not a pokemon')
   };
 }
 
