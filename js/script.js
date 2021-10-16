@@ -54,5 +54,3 @@ return {
 })();
 
 console.log(pokemonRepository.getAll());
-
-
