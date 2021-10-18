@@ -14,7 +14,7 @@ let pokemonList = [
 
  // Adds a new pokemon at the end of the pokemonList with the correct type of data
 function add(pokemon) {
-  if (typeof pokemon === 'name, height, type') {
+  if (pokemon.name && pokemon.height && pokemon.type) {
   pokemonList.push(pokemon);
   } else {
     document.write('not a pokemon')
