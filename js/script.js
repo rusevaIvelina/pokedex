@@ -8,7 +8,7 @@ let pokemonRepository = (function() {
 
      // Adds a new pokemon at the end of the pokemonList with the correct type of data
 
-    function add(pokemon) {
+     function add(pokemon) {
       if (pokemon.name && pokemon.height && pokemon.type) {
       pokemonList.push(pokemon);
       } else {
@@ -55,7 +55,6 @@ let pokemonRepository = (function() {
       })
     }
 
-     //shows details of selected pokemon 
     function loadDetails(item) {
       let url = item.detailsUrl;
       return fetch(url).then(function (response) {
