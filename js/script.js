@@ -123,7 +123,7 @@ let pokemonRepository = (function() {
       })
     };
 
-    window.addEventListener('click', (e) => {
+    window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
         hideModal();
       }
