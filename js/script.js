@@ -9,11 +9,7 @@ let pokemonRepository = (function() {
      // Adds a new pokemon at the end of the pokemonList with the correct type of data
 
      function add(pokemon) {
-      if (pokemon.name && pokemon.height && pokemon.type) {
       pokemonList.push(pokemon);
-      } else {
-        document.write('not a pokemon')
-      };
     }
     
     function getAll() {
