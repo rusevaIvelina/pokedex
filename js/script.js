@@ -35,7 +35,6 @@ let pokemonRepository = (function() {
     // call showDetails function upon button click
     function showDetails(pokemon) {
       loadDetails(pokemon).then(function() {
-        showModal (pokemon.name, pokemon.imageUrl, pokemon.height, pokemon.weight)
         console.log(pokemon);
         });
       } 
