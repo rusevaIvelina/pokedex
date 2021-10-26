@@ -1,0 +1,39 @@
+body {
+  background: black;
+}
+.pokemon-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.list-group-item {
+    border: none;
+    text-align: center;
+  }
+.btn {
+    width: 150px;
+  }
+img {
+    width: 200px;
+    height: 200px;
+  }
+.modal-body {
+    text-align: center;
+  }
+.container {
+    margin-top: 50px;
+  }
+.collapse {
+    justify-content: right;
+  }
+.navbar {
+    background-color: lightcoral;
+  }
+.list-group-item {
+    background-color: black;
+  }
+  
+@media all and (max-width: 550px) {
+.pokemon-list {    
+    grid-template-columns: 1fr 1fr;
+}};
