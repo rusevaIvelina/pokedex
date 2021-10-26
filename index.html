@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -10,10 +11,41 @@
            crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
+
     <body>
-        <div id="modal-container"></div>
-        <h1>Pokedex</h1>
-        <ul class="pokemon-list"></ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">Pokedex</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Pokemon" aria-label="Search"
+            id="searchbar">
+            <button class="btn btn-warning" type="submit"> Search</button>
+            </form>
+          </div>
+        </nav>
+        <ul class="pokemon-list list-group"></ul>
+
+        <div class="modal fade" id="poModal" tabindex="-1" role="dialog" aria-labelledby="poModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="poModalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+                    
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
@@ -24,7 +56,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
           crossorigin="anonymous"></script>
-          
+
           <script src="js/promise-polyfill.js"></script>
           <script src="js/fetch.umd.js"></script>
         <script src="js/script.js"></script>
