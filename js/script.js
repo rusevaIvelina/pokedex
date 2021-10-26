@@ -187,11 +187,11 @@ const pokemonRepository = (function() {
 
     //scroll back button
 
-    const scrollUpButton = document.getElementById("btn-go-to-top");
+    const scrollUpButton = document.getElementById("btn-back-to-top");
 
-    scrollUpButton.addEventListener("click", goToTop);
+    scrollUpButton.addEventListener("click", backToTop);
 
-    function goToTop() {
+    function backToTop() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
