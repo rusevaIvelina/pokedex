@@ -184,3 +184,14 @@ const pokemonRepository = (function() {
         pokemonRepository.addListItem(pokemon);
      });
     });
+
+    //scroll back button
+
+    const scrollUpButton = document.getElementById("btn-go-to-top");
+
+    scrollUpButton.addEventListener("click", goToTop);
+
+    function goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
