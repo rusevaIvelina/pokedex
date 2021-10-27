@@ -91,43 +91,48 @@ const pokemonRepository = (function() {
     // Modal code
     const modalContainer = document.querySelector('#pokemonModalContainer');
 
-	function showModal(pokemon) {
-		  const modalTitle = document.querySelector('.modal-title');
-		  const modalBody = document.querySelector('.modal-body');
+    function showModal(pokemon) {
+      let modalTitle = document.querySelector('.modal-title');
+      let modalBody = document.querySelector('.modal-body');
+  
+      modalTitle.innerText = '';
+      modalBody.innerText = '';
+  
+      //create element for name in modal
+      let nameElement = document.createElement('h1');
+      nameElement.innerText = pokemon.name;
+      nameElement.classList.add('name-element');
+  
+      //create img in modal content
+      const imageElement = document.createElement('img');
+      imageElement.src = pokemon.imageUrl;
+      imageElement.classList.add('modal-img');
+  
+      //create element for height in modal content
+      let heightElement = document.createElement('p');
+      heightElement.innerText = 'Height: ' + pokemon.height;
 
-      modalTitle.innerHTML = '';
-		  modalBody.innerHTML = '';
+      //create element for weight
 
-		  //create element for name in modal
-		  const nameElement = document.createElement('h1');
-		  nameElement.innerText = pokemon.name;
-		  nameElement.classList.add('name-element');
-
-		  //create img in modal content
-		  const imageElement = document.createElement('img');
-		  imageElement.src = pokemon.imageUrl;
-		  imageElement.classList.add('modal-img');
-
-		  //create element for height in modal content
-		  const heightElement = document.createElement('p');
-		  heightElement.innerText = 'Height: ' + pokemon.height
-
-		  //create element for pokemon in modal content
-		  const pokemonTypes = [];
-		
-			Object.keys(pokemon.types).forEach(key => {
-				pokemonTypes.push(' ' + pokemon.types[key].type.name);
-			});
-
-		  const typesElement = document.createElement('p');
-		  typesElement.innerText = 'Type: ' + pokemonTypes;
-		  typesElement.classList.add('types-element');
-
-
-		  modalTitle.append(nameElement);
-		  modalBody.append(imageElement);
-		  modalBody.append(heightElement);
-		  modalBody.append(typesElement); 
+      const weightElement = document.createElement("p");
+      weightElement.innerText = "Weight: " + pokemon.weight;
+  
+      //create element for pokemon in modal content
+      const pokemonTypes = [];
+      
+        Object.keys(pokemon.types).forEach(key => {
+          pokemonTypes.push(' ' + pokemon.types[key].type.name);
+        });
+  
+      const typesElement = document.createElement('p');
+      typesElement.innerText = 'Type: ' + pokemonTypes;
+      typesElement.classList.add('types-element');
+  
+  
+      modalTitle.append(nameElement);
+      modalBody.append(imageElement);
+      modalBody.append(heightElement);
+      modalBody.append(typesElement); 
 
 		  modalContainer.classList.add('is-visible');
 	}
@@ -170,9 +175,9 @@ const pokemonRepository = (function() {
 		});
 	});
 
-  //Scroll back totop button
+  //Scroll back to top button
 
-   let scrollUpButton = document.getElementById('btn-back-to-top');
+   const scrollUpButton = document.getElementById('btn-back-to-top');
 
    scrollUpButton.addEventListener('click', backToTop);
 
