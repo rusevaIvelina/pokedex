@@ -15,13 +15,13 @@
     </head>
 
     <body>
-      <!-- NavBar with Search Bar -->
+      <!-- NavBar with Search -->
       <header class="page-header" id="top">
         <nav class="navbar navbar-expand-sm navbar-light fixed-top">
             <h1 class="navbar-brand">Pokedex
               <img src="img/pokeball-logo-DC23868CA1-seeklogo.com.png" alt="pokeball logo" width="90px">
             </h1> 
-             <button class="navbar-toggler" type="button" data-toggle="collapse" 
+             <button class="navbar-toggler sr-only" type="button" data-toggle="collapse" 
              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
              aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
   
       <!-- List of Pokemon -->
         <div class="container list-container">
-          <ul class="pokemon-list row list-unstyled justify-content-center"></ul>
+          <ul class="pokemon-list sr-only row list-unstyled justify-content-center"></ul>
         </div>
   
   
@@ -59,7 +59,7 @@
               <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-close btn-warning border border-secondary" 
                 data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true"> close</span>
+                  <span aria-hidden="true" class="sr-only"> Close</span>
                 </button>
               </div>
             </div>
@@ -68,7 +68,7 @@
 
         </main>
 
-        <button type="button" class="btn btn-floating" id="btn-back-to-top">
+        <button type="button" class="btn btn-floating sr-only" id="btn-back-to-top">
           <i class="bi bi-caret-up-fill"></i>
         </button>
 
