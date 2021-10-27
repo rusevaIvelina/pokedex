@@ -169,6 +169,18 @@ const pokemonRepository = (function() {
 			}
 		});
 	});
+
+  //Scroll back totop button
+
+   let scrollUpButton = document.getElementById('btn-back-to-top');
+
+   scrollUpButton.addEventListener('click', backToTop);
+
+   function backToTop() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+}
+  
     
     return {
       add: add,
@@ -184,14 +196,3 @@ const pokemonRepository = (function() {
         pokemonRepository.addListItem(pokemon);
      });
     });
-
-    //scroll back button
-
-    const scrollUpButton = document.getElementById("btn-back-to-top");
-
-    scrollUpButton.addEventListener("click", backToTop);
-
-    function backToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
