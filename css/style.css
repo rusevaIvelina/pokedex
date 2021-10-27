@@ -21,6 +21,11 @@ font-family:'Saira Stencil One', cursive;
 color:#383d41 !important;
 }
 
+.info-title {
+  font-family: 'Saira Stencil One', cursive;
+  color: #383d41 !important;
+}
+
 .navbar-toggler {
 margin-right: 3vw;
 }
