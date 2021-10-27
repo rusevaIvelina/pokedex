@@ -1,17 +1,24 @@
 /* -- header elements */
 
+body{
+  background-color: #FFE6EE;
+}
+
 .page-header {
   padding: 50px;
 }
 
 .navbar {
-background-color: #FF0000;
+background-color: #ffc107;
 padding-top: 20px;
-  padding-bottom: 20px;
+padding-bottom: 20px;
 }
 
 .navbar-brand {
 margin-left: 3vw;
+font-size: 40px;
+font-family:'Saira Stencil One', cursive;
+color:#383d41 !important;
 }
 
 .navbar-toggler {
@@ -19,6 +26,11 @@ margin-right: 3vw;
 }
 
 /*-- main elements */
+
+.btn-warning {
+  color: #212529;
+  background-color: rgb(0,123,255,0.5);
+}
 
 .pokemon-list {
 margin-top: 60px;
@@ -47,16 +59,18 @@ justify-content: center;
 
 .modal-content{
 margin-top: 5vh;
+background-color: #FFE6EE;
 }
 
 .modal-title{
-color: #FFCB05;
+color: #383d41;
 }
 
 .modal-header {
 border: none;
-background-color: #303030;
+background-color: #007BFF80;
 }
+
 .modal-body {
 display: flex;
 flex-direction: column;
@@ -64,23 +78,16 @@ border-left: 6px solid #303030;
 border-right: 6px solid #303030;
 }
 
-.modal-img {
-height: 200px;
-width: 200px;
-margin-top: 20px;
-margin-bottom: 40px;
-align-self: center;
-}
-
 .modal-footer{
-border-left: 6px solid #303030;
-border-right: 6px solid #303030;
-border-bottom: 6px solid #303030;
-border-top: none;
+	border-left: 6px solid #303030;
+	border-right: 6px solid #303030;
+	border-bottom: 6px solid #303030;
+	border-top: none;
 }
 
 .btn-close {
-color: #343198;
+color: #383d41;
+font-weight: bold;
 }
 
 
