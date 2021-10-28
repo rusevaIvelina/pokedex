@@ -102,17 +102,7 @@ font-weight: bold;
   position: fixed;
   bottom: 20px;
   right: 25px;
-  background-color: #343198;
+  background-color: #00BCD4;
   border: none;
-  border-radius: 50%;
-}
-
-.fa-aarow-up {
-  font-size:1.5px;
-  color:#ffc107;
-}
-
-#btn-back-to-top:hover {
-  opacity: 0.9;
-  cursor: pointer;
+  border-radius: 20%;
 }
