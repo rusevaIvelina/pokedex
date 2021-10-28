@@ -107,6 +107,12 @@ font-weight: bold;
   border-radius: 50%;
 }
 
-.bi-caret-up-fill{
-color: #fdc109;
+.fa-aarow-up {
+  font-size:1.5px;
+  color:#ffc107;
+}
+
+#btn-back-to-top:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
