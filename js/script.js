@@ -74,10 +74,11 @@ const pokemonRepository = (function() {
       return response.json();
     }).then(function (details) {
       // Now we add the details to the item
-      pokemon.imageUrl = details.sprites.front_default;
+      pokemon.imageUrl = details.sprites.other.dream_world.front_default;
       pokemon.height = details.height;
       pokemon.types = details.types;
       pokemon.weight = details.weight;
+      pokemon.abilities = details.abilities;
     }).catch(function (e) {
       console.error(e);
     });
@@ -111,13 +112,15 @@ const pokemonRepository = (function() {
 
     //create element for height in modal content
     const heightElement = document.createElement("p");
-    heightElement.innerText = "Height: " + pokemon.height;
+    heightElement.innerText = "Height: " + pokemon.height / 10 + "m";
+    heightElement.classList.add("height-element");
 
     //create element for weight
     const weightElement = document.createElement("p");
-    weightElement.innerText = "Weight: " + pokemon.weight;
+    weightElement.innerText = "Weight: " + pokemon.weight / 10 + "kg";
+    weightElement.classList.add("weight-element");
 
-    //create element for pokemon in modal content
+    //create element for types
     const pokemonTypes = [];
 
       Object.keys(pokemon.types).forEach(key => {
@@ -128,11 +131,23 @@ const pokemonRepository = (function() {
     typesElement.innerText = "Type: " + pokemonTypes;
     typesElement.classList.add("types-element");
 
+    //create element for abilites
+
+    const pokemonAbilities = [];
+    Object.keys(pokemon.abilities).forEach(key => {
+      pokemonAbilities.push(" " + pokemon.abilities[key].ability.name);
+    });
+
+    const abilitiesElement = document.createElement("p");
+    abilitiesElement.innerText = "Abilities: " + pokemonAbilities;
+    abilitiesElement.classList.add("abilities-element");
 
     modalTitle.append(nameElement);
     modalBody.append(imageElement);
     modalBody.append(heightElement);
+    modalBody.append(weightElement);
     modalBody.append(typesElement);
+    modalBody.append(abilitiesElement);
 
       modalContainer.classList.add("is-visible");
   }
