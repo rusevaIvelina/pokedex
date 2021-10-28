@@ -25,6 +25,10 @@ color:#383d41 !important;
 margin-right: 3vw;
 }
 
+.pokeball-logo {
+  width: 90px;
+}
+
 /*-- main elements */
 
 .btn-warning {
@@ -77,6 +81,14 @@ display: flex;
 flex-direction: column;
 border-left: 6px solid #303030;
 border-right: 6px solid #303030;
+}
+
+.modal-img {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  align-self: center;
 }
 
 .modal-footer{
