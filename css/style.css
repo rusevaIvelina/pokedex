@@ -21,12 +21,6 @@ font-family:'Saira Stencil One', cursive;
 color:#383d41 !important;
 }
 
-.app-info-link {
-  font-family: 'Saira Stencil One', cursive;
-  color: #383d41 !important;
-  font-size: x-large;
-}
-
 .navbar-toggler {
 margin-right: 3vw;
 }
@@ -63,9 +57,10 @@ justify-content: center;
 
 /*--modal elements*/
 
-.modal-content{
+.modal-content {
 margin-top: 5vh;
 background-color: #FFE6EE;
+font-weight: bold;
 }
 
 .modal-title{
