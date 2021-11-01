@@ -25,7 +25,7 @@ const pokemonRepository = (function() {
 
     //Creating list items to go inside ul:
     const listItem = document.createElement("li");
-    listItem.classList.add('group-list-item', 'col-lg-4', 'col-md-6');
+    listItem.classList.add("group-list-item", "col-lg-4", "col-md-6");
 
     //Creating buttons for list items:
     const button = document.createElement("button");
