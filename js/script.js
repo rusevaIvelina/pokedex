@@ -159,11 +159,11 @@ function hideModal () {
 }
 
 // Function to hide modal when Escape key is pressed
-window.addEventListener("keydown", (e) => {
-if (e.key === "Escape" && modalContainer.classList.contains("is-visible")){
-hideModal();
-}
-});
+  window.addEventListener("keydown", (e) => {
+   if (e.key === "Escape" && modalContainer.classList.contains("is-visible")){
+   hideModal();
+   }
+ });
 
 //Function to hide modal when clicking outside of modal
 modalContainer.addEventListener("click", (e) => {
@@ -182,12 +182,12 @@ const pokeListItem = document.querySelectorAll("li");
 const filter = pokemonSearchBar.value.toUpperCase();
 
 pokeListItem.forEach(function(pokemon){
-if (pokemon.innerText.toUpperCase().indexOf(filter) === 0) {
-pokemon.style.display = "block";
-} else {
-pokemon.style.display = "none";
-}
-});
+  if (pokemon.innerText.toUpperCase().indexOf(filter) === 0) {
+      pokemon.style.display = "block";
+  } else {
+      pokemon.style.display = "none";
+    }
+  });
 });
 
 //Scroll back to top button
