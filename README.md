@@ -1,6 +1,6 @@
 # Pokedex (JavaScript App)
 
-This is an application where you, the user, can view a list of Pokemon and interact with the app to see details about each Pokemon.
+This is an application where the user, can view a list of Pokemon and interact with the app to see details about each Pokemon.
 
 Key Features
 
